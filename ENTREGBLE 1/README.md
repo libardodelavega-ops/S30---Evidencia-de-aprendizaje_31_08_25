@@ -56,6 +56,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "CI: generate and validate datos_out.txt and grafico_out.jpg"
-          commit_user_name: "Monica Machado [GitHub Actions]"
-          commit_user_email: "monica.machado@est.iudigital.edu.co"
-          commit_author: "Monica Machado <monica.machado@est.iudigital.edu.co>"
+          commit_user_name: "libardo Delavega [GitHub Actions]"
+          commit_user_email: "libardo.delavega@est.iudigital.edu.co"
+          commit_author: "libardo Delavega <libardo.delavega@est.iudigital.edu.co>"
