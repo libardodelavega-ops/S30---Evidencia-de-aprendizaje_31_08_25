@@ -11,7 +11,7 @@ class Entregable_dos():
         Descarga el dataset con kagglehub y lo carga en un DataFrame.
         """
         path = kagglehub.dataset_download(dataset_name)
-        print("✅ Path del dataset:", path)
+        print("Path del dataset:", path)
 
         # Busca el primer archivo CSV dentro de la carpeta descargada
         csv_file = None
@@ -21,7 +21,7 @@ class Entregable_dos():
                 break
 
         if not csv_file:
-            print("❌ No se encontró archivo CSV en el dataset.")
+            print(" No se encontró archivo CSV en el dataset.")
             return pd.DataFrame()
 
         df = pd.read_csv(csv_file)
@@ -32,7 +32,7 @@ class Entregable_dos():
         Agrega columnas adicionales al dataset de cocodrilos.
         """
         if df.empty:
-            print("❌ DataFrame vacío.")
+            print("DataFrame vacío.")
             return df
         
         # Ejemplo: clasificar por tamaño si existe la columna "Length_m" o similar
@@ -53,9 +53,9 @@ class Entregable_dos():
         Genera gráficos básicos con datos del dataset de cocodrilos.
         """
         if df.empty:
-            print("❌ DataFrame vacío. No se pueden generar gráficos.")
+            print("DataFrame vacío. No se pueden generar gráficos.")
             return
-        print("✅ Generando gráficos...")
+        print("Generando gráficos...")
 
         fig, axes = plt.subplots(1, 3, figsize=(18, 5))
 
@@ -79,7 +79,7 @@ class Entregable_dos():
 
         plt.tight_layout()
         plt.savefig("entregable2_crocodiles.jpg")
-        print("✅ Gráfico guardado como 'entregable2_crocodiles.jpg'")    
+        print("Gráfico guardado como 'entregable2_crocodiles.jpg'")    
 
 
 # ------------------- EJECUCIÓN -------------------
