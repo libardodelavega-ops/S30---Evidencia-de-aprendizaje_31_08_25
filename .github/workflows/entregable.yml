@@ -26,7 +26,7 @@ jobs:
 
       - name: Step 4 - Install deps
         run: |
-          python -m pip install matplotlib
+          python -m pip install matplotlib kagglehub
         shell: pwsh
 
       - name: Step 5 - Ensure input file
@@ -37,14 +37,10 @@ jobs:
         shell: pwsh
 
       - name: Step 6 - Run entregable_uno.py
-        run: python entregable_uno.py
+        run: python ENTREGABLE_01/entregable_uno.py
         shell: pwsh
 
-      - name: Step 7 - Run entregable_dos.py
-        run: python entregable_dos.py
-        shell: pwsh
-
-      - name: Step 8 - Validate
+      - name: Step 7 - Validate
         run: |
           $out = python validador_uno.py
           Write-Host $out
@@ -53,6 +49,10 @@ jobs:
           } else {
             throw "Entregable uno  OK error"
           }
+        shell: pwsh
+
+      - name: Step 8 - Run entregable_dos.py
+        run: python entregable_dos.py
         shell: pwsh
 
       - name: Step 9 - Auto-commit artifacts
