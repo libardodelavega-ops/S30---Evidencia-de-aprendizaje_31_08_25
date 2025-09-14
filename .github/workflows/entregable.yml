@@ -42,7 +42,7 @@ jobs:
 
       - name: Step 7 - Validate
         run: |
-          $out = python validador_uno.py
+          $out = python ENTREGABLE_01/validador_uno.py
           Write-Host $out
           if ($out -match 'Nota:\s*5') {
             Write-Host 'Entregable uno  OK'
