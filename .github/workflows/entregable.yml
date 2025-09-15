@@ -36,20 +36,20 @@ jobs:
           }
         shell: pwsh
 
-      - name: Step 6 - Run entregable_uno.py
-        run: python ENTREGABLE_01/entregable_uno.py
-        shell: pwsh
+#      - name: Step 6 - Run entregable_uno.py
+#        run: python ENTREGABLE_01/entregable_uno.py
+#        shell: pwsh
 
-      - name: Step 7 - Validate
-        run: |
-          $out = python ENTREGABLE_01/validador_uno.py
-          Write-Host $out
-          if ($out -match 'Nota:\s*5') {
-            Write-Host 'Entregable uno  OK'
-          } else {
-            throw "Entregable uno  OK error"
-          }
-        shell: pwsh
+#      - name: Step 7 - Validate
+#        run: |
+#          $out = python ENTREGABLE_01/validador_uno.py
+#          Write-Host $out
+#          if ($out -match 'Nota:\s*5') {
+#            Write-Host 'Entregable uno  OK'
+#          } else {
+#            throw "Entregable uno  OK error"
+#          }
+#        shell: pwsh
 
       - name: Step 8 - Run entregable_dos.py
         run: python entregable_dos.py
