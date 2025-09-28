@@ -51,11 +51,15 @@ jobs:
 #          }
 #        shell: pwsh
 
-      - name: Step 8 - Run entregable_dos.py
-        run: python entregable_dos.py
+#      - name: Step 6 - Run entregable_dos.py
+#        run: python entregable_dos.py
+#        shell: pwsh
+
+      - name: Step 6 - Run Entregable Actividad 3
+        run: python Entregable_03.py
         shell: pwsh
 
-      - name: Step 9 - Auto-commit artifacts
+      - name: Step 7 - Auto-commit artifacts
         if: success()
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
