@@ -56,7 +56,7 @@ jobs:
 #        shell: pwsh
 
       - name: Step 6 - Run Entregable Actividad 3
-        run: python Entregable_03.py
+        run: python Actividad_03/Entregable_03.py
         shell: pwsh
 
       - name: Step 7 - Auto-commit artifacts
