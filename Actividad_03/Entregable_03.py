@@ -13,7 +13,7 @@ class ejercicios:
         datos = [(i, None) for i in range(1, 13)] 
         self.df= pd.DataFrame(data=datos,columns=["#ejercicio", "valor"])
         self.ruta_raiz=os.path.abspath(os.getcwd())
-        self.ruta_Actividad_3 = "{}/Actividad_03/Archivos_Act_03".format(self.ruta_raiz)
+        self.ruta_Actividad_3 = "{}/Actividad_03/Salida_Archivos_Act_03".format(self.ruta_raiz)
 
 
     def ejercicio1(self):
