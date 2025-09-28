@@ -1,0 +1,14 @@
+Tipos de uva más comunes en California:
+variety
+Pinot Noir             6896
+Cabernet Sauvignon     5693
+Chardonnay             5183
+Zinfandel              2639
+Syrah                  1870
+                       ... 
+Prosecco                  1
+Tannat-Syrah              1
+Rosado                    1
+Muscat d'Alexandrie       1
+Alvarinho                 1
+Name: count, Length: 194, dtype: int64
