@@ -1,16 +1,13 @@
 Vino más caro de California:
-Unnamed: 0                                                          120391
-country                                                                 US
-description              The nose on this single-vineyard wine from a s...
-designation                                            Roger Rose Vineyard
-points                                                                  91
-price                                                               2013.0
-province                                                        California
-region_1                                                       Arroyo Seco
-region_2                                                     Central Coast
-taster_name                                                  Matt Kettmann
-taster_twitter_handle                                        @mattkettmann
-title                    Blair 2013 Roger Rose Vineyard Chardonnay (Arr...
-variety                                                         Chardonnay
-winery                                                               Blair
-Name: 120391, dtype: object
+Unnamed: 0                                                 13318
+country                                                       US
+description    The nose on this single-vineyard wine from a s...
+designation                                  Roger Rose Vineyard
+points                                                        91
+price                                                     2013.0
+province                                              California
+region_1                                             Arroyo Seco
+region_2                                           Central Coast
+variety                                               Chardonnay
+winery                                                     Blair
+Name: 13318, dtype: object
